@@ -55,9 +55,21 @@ describe Fomo::Event do
     .to_return(status: 200, body: File.read("spec/support/retrieve_events.json"), headers: {"Content-Type" => "application/json"})
 
     event_list = Fomo::Event.retrieve_events(30, 1)
-    puts event_list.events[0].id.should eq(1)
-    puts event_list.events[1].id.should eq(9438552)
+    event_list.events[0].id.should eq(1)
+    event_list.events[1].id.should eq(9438552)
 
+  end
+
+  it "retrieves all events with meta included" do
+
+    WebMock.stub(:get, "https://api.fomo.com/api/v1/applications/me/events?per=30&page=1&show_meta=true")
+    .to_return(status: 200, body: File.read("spec/support/retrieve_events_with_meta.json"), headers: {"Content-Type" => "application/json"})
+
+    event_list = Fomo::Event.retrieve_events_with_meta(30, 1)
+    event_list.size.should eq(2)
+    event_list.events[0].id.should eq(1)
+    event_list.events[1].id.should eq(9438552)
+    puts event_list.meta.per_page.should eq (10)
   end
 
 end
