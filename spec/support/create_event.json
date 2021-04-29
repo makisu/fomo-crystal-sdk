@@ -1,0 +1,20 @@
+{
+  "id": 1,
+  "external_id": "adf23r",
+  "event_type_id": 123,
+  "url": "http://fomo.com",
+  "first_name": "John",
+  "city": "New York",
+  "country": "US",
+  "title": "San Francisco Dealership",
+  "image_url": "http://newevent.com",
+  "created_at_to_seconds_from_epoch": 1123123123,
+  "message": "John from New York just got a new Corvette at our San Francisco Dealership",
+  "link": "http://fomo.com/some-awesome-link?utm_source=fomo&utm_medium=notification",
+  "custom_event_fields_attributes": [
+      {
+          "key": "model",
+          "value": "Corvette"
+      }
+  ]
+}

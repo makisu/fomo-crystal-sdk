@@ -1,0 +1,20 @@
+{
+  "id": 1,
+  "event_type_id": 123,
+  "external_id": "fdsa23423",
+  "url": "http://fomo.com",
+  "first_name": "john",
+  "city": "New York",
+  "country": "US",
+  "title": "New event",
+  "image_url": "http://newevent.com",
+  "created_at_to_seconds_from_epoch": 1123123123,
+  "message": "John from New York just got a New event",
+  "link": "http://fomo.com?utm_source=fomo&utm_medium=notification",
+  "custom_event_fields_attributes": [
+      {
+          "key": "Model",
+          "value": "Clio"
+      }
+  ]
+}

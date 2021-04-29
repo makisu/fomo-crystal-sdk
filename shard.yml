@@ -1,0 +1,16 @@
+name: fomo-crystal-sdk
+version: 0.1.0
+
+authors:
+  - Rio <rjmssevilla@gmail.com>
+
+crystal: 1.0.0
+
+development_dependencies:
+  webmock:
+    github: manastech/webmock.cr
+    branch: master
+  debug:
+    github: Sija/debug.cr
+
+license: MIT

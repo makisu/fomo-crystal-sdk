@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "application_id": 1851,
+  "event_type_id": 123,
+  "url": "https://www.fomo.com",
+  "first_name": "john",
+  "ip_address": "128.177.108.102",
+  "email_address": "john@fomo.com",
+  "city": "New York",
+  "country": "US",
+  "title": "new car",
+  "image_url": "http://newevent.com",
+  "created_at_to_seconds_from_epoch": 1495727686,
+  "message": "John from New York just got a new car",
+  "link": "https://www.fomo.com?utm_source=fomo&utm_medium=notification",
+  "custom_event_fields_attributes": [
+      {
+        "key": "Model",
+        "value": "Clio"
+      }
+  ]
+}
