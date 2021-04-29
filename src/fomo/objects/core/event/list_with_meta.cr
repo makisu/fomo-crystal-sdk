@@ -4,10 +4,10 @@ class Fomo::Event::List::Meta
 
   getter events : Array(::Fomo::Event)
   getter meta : (::Fomo::Meta)
+
   def each(&block)
     events.each do |i|
       yield i
     end
   end
-
 end

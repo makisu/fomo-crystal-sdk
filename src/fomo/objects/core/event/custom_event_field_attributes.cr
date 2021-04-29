@@ -3,5 +3,4 @@ class Fomo::CustomEventFieldsAttributes
 
   getter key : String
   getter value : String
-
 end

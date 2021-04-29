@@ -5,8 +5,4 @@ class Fomo::Meta
   getter page : Int32
   getter total_count : Int32
   getter total_pages : Int32
-
 end
-
-
-

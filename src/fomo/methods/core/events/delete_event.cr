@@ -8,5 +8,4 @@ class Fomo::Event
       raise Error.from_json(response.body, "error")
     end
   end
-
 end
